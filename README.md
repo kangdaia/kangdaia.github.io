@@ -1,5 +1,4 @@
 # Final Project
-===============
 > blockquote
 >   > blockquote
 **Example:**
