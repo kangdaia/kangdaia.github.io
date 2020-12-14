@@ -20,25 +20,32 @@
 
 ## Introduction
 
+What is your priority factor making you happy? Money, healthly, or other?
+
+The happiness is one of the most important part of human life. We feel happiness from pleasure or joy and from life-satisfaction. The happiness data record the happiness in number with the meansing of life-satisfaction through various economical and sociological factors.
+> blockquote
+>> blockquote
+
 Main idea: test what is the main factor(s) for happiness.
+test hypothesis: is there a big difference in happiness between OECD country and others
+
 
 ***
 
 ## 0. Getting Started
 
-For more detail, check the link: [World_Happiness][kagglelink]
+- All the work is based on Python 3 (Python 3.9.0) with the following packages:
+    <pre><code>
+    import pandas as pd
+    import numpy as np
+    import matplotlib as mlt
+    </code></pre>
+- Download dataset in this link: [World_Happiness][kagglelink]
+- Data includes 5 years (2015 ~ 2019) record of happiness in countries.
 
 [kagglelink]: https://www.kaggle.com/unsdsn/world-happiness
 
-> blockquote
->> blockquote
 
-**Example:**
-<pre>
-<code>
-    code block
-</code>
-</pre>
 ***
 
 ## 1. Data Processing
