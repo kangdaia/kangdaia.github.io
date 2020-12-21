@@ -14,9 +14,6 @@
   - [1. Data Processing](#1-data-processing)
     - [1.1 Reading Data from File](#11-reading-data-from-file)
     - [1.2 Fill the Empty Column](#12-fill-the-empty-column)
-- [Sort data by Country](#sort-data-by-country)
-- [Get the Country and Region columns only](#get-the-country-and-region-columns-only)
-- [Merge two](#merge-two)
     - [1.3 Extract and Rename](#13-extract-and-rename)
 - [columns list to want to use](#columns-list-to-want-to-use)
   - [2. Data Exploration and Analysis](#2-data-exploration-and-analysis)
@@ -49,12 +46,13 @@ All the work is based on Python 3 (Python 3.9.0) with the following packages:
 - sklearn: use to predict the model of regression or classification
 
 Import the modules like this:
-    <pre><code>
-    import pandas as pd
+    <pre>
+    <code>import pandas as pd
     import numpy as np
     import matplotlib as mlt
     import seaborn as sns
-    import sklearn </code></pre>
+    import sklearn </code>
+    </pre>
 
 Download dataset in this link: [World_Happiness][kagglelink]
 Data includes five years (2015 ~ 2019) record of happiness for each country.
@@ -70,8 +68,7 @@ Data includes five years (2015 ~ 2019) record of happiness for each country.
 The goal is reading data from CSV files, reorganizing the data as we want.
 First, as each year data is in separate csv file, we need to read each csv file. Read the CSV files for each year by **pd.read_csv(filename)** method, and DO NOT add all data up yet; each file has differet columns and columns' name. Also, the original CSV files do not have a column indicating year, I add the year column to the DataFrame using **insert(column_index, column_name, column_data)**.
 <pre>
-<code>
-data_2015 = pd.read_csv(f"WorldHappiness/2015.csv", sep=",")
+<code>data_2015 = pd.read_csv(f"WorldHappiness/2015.csv", sep=",")
 data_2015.insert(0, "year", 2015, True)
 
 data_2016 = pd.read_csv(f"WorldHappiness/2016.csv", sep=",")
@@ -120,26 +117,24 @@ In summary, we will use the columns: country, region, rank, score, gdp, family, 
 
 To get the region data from 2015 and 2016, sort the two datasets by *Country* name, and extract only the *Country* and *Region* columns. Then, the 2015 data and 2016 data have different length, so we need to consider the case that the countries only exist in one of the dataset. To prevent loss, we will merge the two region data as **outer** option in **pd.merge** function.
 <pre>
-<code>
-# Sort data by Country
+<code>#Sort data by Country
 sort_2016 = data_2016.sort_values(by="Country")
 sort_2015 = data_2015.sort_values(by="Country")
 
-# Get the Country and Region columns only
+#Get the Country and Region columns only
 region_2016 = sort_2016[["Country", "Region"]]
 region_2015 = sort_2015[["Country", "Region"]]
 
-# Merge two
+#Merge two
 region = pd.merge(region_2015,region_2016, how="outer")</code>
 </pre>
 
 - region and country shape:  (164, 2)
 
 Now, the region has more region data than data from 2015 and 2016.
-After making the region dataset, we will apply this region data to different year datasets. The 2018 and 2019 dataset have different column name for *Country* as *Country or region* (check the above column list table), specifing the merge option that the column in left dataset to merge is "Country or region" and the column in right dataset to merge is "Country". The merge between the 2017, 2018, and 2019 data and region data is inner merge (default); it will not include the row which cannot find corresponding country and region in region data. 
+After making the region dataset, we will apply this region data to different year datasets. The 2018 and 2019 dataset have different column name for *Country* as *Country or region* (check the above column list table), specifing the merge option that the column in left dataset to merge is "Country or region" and the column in right dataset to merge is "Country". The merge between the 2017, 2018, and 2019 data and region data is inner merge (default); it will not include the row which cannot find corresponding country and region in region data.
 <pre>
-<code>
-data_new_2017 = pd.merge(data_2017, region)
+<code>data_new_2017 = pd.merge(data_2017, region)
 data_new_2018 = pd.merge(data_2018, region, left_on="Country or region", right_on="Country")
 data_new_2019 = pd.merge(data_2019, region, left_on="Country or region", right_on="Country")</code>
 </pre>
