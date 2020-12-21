@@ -1,28 +1,27 @@
-# What Make You <span style="color:#FF0078">Happy</span>?
+What Make You <span style="color:#FF0078">Happy</span>?
+=========================================================
 
-*Final Tutorial Project for CMSC320, Fall2020*
-
+***Final Tutorial Project for CMSC320, Fall2020***
 *Created by Dahye Kang*
-***
 
-## Table of Contents
+# Table of Contents
 
 - [What Make You <span style="color:#FF0078">Happy</span>?](#what-make-you-happy)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Instruction](#instruction)
   - [0. Getting Started](#0-getting-started)
   - [1. Data Processing](#1-data-processing)
     - [1.1 Reading Data from File](#11-reading-data-from-file)
     - [1.2 Fill the Empty Column](#12-fill-the-empty-column)
     - [1.3 Extract and Rename](#13-extract-and-rename)
-- [columns list to want to use](#columns-list-to-want-to-use)
   - [2. Data Exploration and Analysis](#2-data-exploration-and-analysis)
   - [3. Regression (Hypothesis Testing)](#3-regression-hypothesis-testing)
   - [4. Conclusion](#4-conclusion)
 
 ***
 
-## Introduction
+# Introduction
 
 What is your priority factor making you happy? Money, healthly, or other?
 
@@ -34,6 +33,8 @@ Main idea: test what is the main factor(s) for happiness.
 test hypothesis: is there a big difference in happiness between OECD country and others
 
 ***
+
+# Instruction
 
 ## 0. Getting Started
 
@@ -151,7 +152,7 @@ The outcome dataset shows the shape as:
 As above I said, we only need the data that are all common in every year data.
 <pre>
 <code>
-# columns list to want to use
+#columns list to want to use
 cols = ["year","country","region","rank","score","gdp","family","lifeExp","freedom","trust","generosity"]
 
 data = []
