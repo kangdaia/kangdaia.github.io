@@ -4,8 +4,7 @@ repo_url: https://github.com/kangdaia/
 nav:
     - Home: index.md
     - Projects:
-        - "What Makes You Happy?": 
-            - projects/project-happy.md
+        - "What Makes You Happy?": projects/project-happy.md
 theme:
     name: material
     language: en
@@ -18,6 +17,7 @@ theme:
     icon:
         repo: fontawesome/brands/github
         logo: fontawesome/solid/gem
+
     palette:
         scheme: slate
         primary: custom
@@ -29,14 +29,21 @@ markdown_extensions:
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
-extra:
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: Korean
-      link: /ko/
-      lang: ko
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+#extra:
+  #alternate:
+    #- name: English
+    #  link: /
+    #  lang: en
+    #- name: Korean
+    #  link: /ko/
+    #  lang: ko
 
 extra_css:
     - stylesheets/extra.css

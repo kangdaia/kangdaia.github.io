@@ -21,8 +21,9 @@ jupyter:
 
 # What Makes You Happy?
 
-***Final Tutorial Project for Data Science: CMSC320, Fall2020*** *Created by Dahye
-Kang*
+Final Tutorial Project for Intro to Data Science
+
+>CMSC320, Fall 2020, Dahye Kang
 
 ------------------------------------------------------------------------
 

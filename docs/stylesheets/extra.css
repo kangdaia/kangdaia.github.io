@@ -10,6 +10,26 @@
 .md-grid {
     max-width: 1280px;
 }
+.md-typeset a {
+    --md-typeset-a-color: #f06d7a;
+}
+.md-typeset code {
+    --md-code-bg-color: #3b3a37;
+    --md-code-hl-color:                  hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
+    --md-code-hl-number-color:           #ae81ff;
+    --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color:         #a6e22e;
+    --md-code-hl-constant-color:         #ae81ff;
+    --md-code-hl-keyword-color:          #f92672;
+    --md-code-hl-string-color:           #e6db74;
+    --md-code-hl-name-color:             var(--md-code-fg-color);
+    --md-code-hl-operator-color:         #f92672;
+    --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+    --md-code-hl-comment-color:          #88846f;
+    --md-code-hl-generic-color:          #66d9ef;
+    --md-code-hl-variable-color:         #f8f8f2;
+}
+
 .md-typeset h1 {
     color: #fff;
 }
