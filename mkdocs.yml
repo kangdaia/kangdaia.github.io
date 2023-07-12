@@ -5,14 +5,16 @@ nav:
     - "Home": index.md
     - "Projects":
         - "Animal STAT-US Tracker": projects/project-animal.md
+        - "WORDSIGHT": projects/project-wordsight.md
         - "What Makes You Happy?": projects/project-happy.md
+        - "Traveling Salesman Problem": projects/project-tsp.md
+        
 theme:
     name: material
     language: en
     features:
         - header.autohide
         - navigation.tabs
-        - navigation.tabs.sticky
         - content.code.copy
     font:
         code: Roboto Mono

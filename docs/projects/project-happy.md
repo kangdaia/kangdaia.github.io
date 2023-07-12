@@ -21,9 +21,10 @@ jupyter:
 
 # What Makes You Happy?
 
-Final Tutorial Project for Intro to Data Science
+**CMSC320: Intro to Data Science** 
+Final Tutorial Project
 
->CMSC320, Fall 2020, Dahye Kang
+> Fall 2020, Dahye Kang
 
 ------------------------------------------------------------------------
 
@@ -301,7 +302,7 @@ plt.yticks(fontsize=13)
 plt.show()
 ```
 
-![](assets/images/e3b343ed543330ffabe0e7c415cf81c5648fb786.png)
+![](../assets/images/e3b343ed543330ffabe0e7c415cf81c5648fb786.png)
 
 The heatmap shows the correlations with the level of strongness through
 the color difference. The color bar on right side indicate which color
@@ -340,7 +341,7 @@ g.tight_layout()
 plt.show()
 ```
 
-![](assets/images/76012a58190d91985598b18dd8445309d6d35a7b.png)
+![](../assets/images/76012a58190d91985598b18dd8445309d6d35a7b.png)
 
 The plot shows that the tendency of higher GDP with higher happiness
 score in every year. If we see the each region\'s regression line, some
@@ -367,7 +368,7 @@ g.tight_layout()
 plt.show()
 ```
 
-![](assets/images/c24578b69438dae2773a15735897b2539a3d84e8.png)
+![](../assets/images/c24578b69438dae2773a15735897b2539a3d84e8.png)
 
 The overall trend is that with higher lifeExp, the higher happiness
 score is which is smaller than GDP slope. The Sub-Saharan Africa,
@@ -392,7 +393,7 @@ g.tight_layout()
 plt.show()
 ```
 
-![](assets/images/3c2c7ed88102a1f41eca49e02139f534a9aaa843.png)
+![](../assets/images/3c2c7ed88102a1f41eca49e02139f534a9aaa843.png)
 
 This is also shows the high social support with high score but not much
 as the lifeExp graph. Most of country does not reflect the high
@@ -415,7 +416,7 @@ g.tight_layout()
 plt.show()
 ```
 
-![](assets/images/234d7db98b8bf260e5dbeef425c7d258a8ab8bbe.png)
+![](../assets/images/234d7db98b8bf260e5dbeef425c7d258a8ab8bbe.png)
 
 This shows the weak relations between happiness score and freedom that
 most of country shows similar happiness score whatever the freedom gets.
@@ -448,7 +449,7 @@ fig.suptitle("Correlation of Happiness with Other Factors for Each Region", font
 plt.show()
 ```
 
-![](assets/images/c18fca4c632abf421fc704099695c045064741b0.png)
+![](../assets/images/c18fca4c632abf421fc704099695c045064741b0.png)
 
 The chart listed the top three factors which is high correlation for
 each region (indicate strong coefficient as
@@ -550,7 +551,7 @@ for i, loc in enumerate(region):
 plt.show()
 ```
 
-![](assets/images/3eacd8f4a1c3b1d3bfcbafede56f1be3fe4b945e.png)
+![](../assets/images/3eacd8f4a1c3b1d3bfcbafede56f1be3fe4b945e.png)
 
 Only the Southeastern Asia show acceptable residual plot, and rest of
 plot show the pattern which mean the model is not working well.
@@ -628,7 +629,7 @@ for i, loc in enumerate(region):
 plt.show()
 ```
 
-![](assets/images/a569fd594236ea14db917fd2e83f89e7532bd226.png)
+![](../assets/images/a569fd594236ea14db917fd2e83f89e7532bd226.png)
 
 This graph shows much scattered points in each plot, which means the
 model is working better than just using global model. Still, the Central

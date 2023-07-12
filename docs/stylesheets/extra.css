@@ -60,7 +60,7 @@
 
 .back {
     width: 100vw;
-    height: 440px;
+    height: min(440px, 460px);
     left: 0;
     top: 5vmax;
     z-index: -1;
@@ -68,9 +68,17 @@
     position:absolute;
     background: no-repeat url("../assets/images/background.jpg");
     background-size:cover;
-    -webkit-filter: blur(1.5px);
-    -moz-filter: blur(1.5px);
-    -o-filter: blur(1.5px);
-    -ms-filter: blur(1.5px);
-    filter: blur(1.5px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.section-title {
+    color: #FDDA0D;
+}
+
+.rotate-img {
+    transform: rotate(90);
 }
