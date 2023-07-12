@@ -1,0 +1,84 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+@font-face {
+    font-family: "Pretendard Variable";
+    src: "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css";
+}
+:root {
+    --md-text-font: "Pretendard Variable";
+    --md-primary-bg-color: #fff;
+}
+.md-grid {
+    max-width: 1280px;
+}
+.md-typeset a {
+    --md-typeset-a-color: #f06d7a;
+}
+.md-typeset code {
+    --md-code-bg-color: #3b3a37;
+    --md-code-hl-color:                  hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
+    --md-code-hl-number-color:           #ae81ff;
+    --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color:         #a6e22e;
+    --md-code-hl-constant-color:         #ae81ff;
+    --md-code-hl-keyword-color:          #f92672;
+    --md-code-hl-string-color:           #e6db74;
+    --md-code-hl-name-color:             var(--md-code-fg-color);
+    --md-code-hl-operator-color:         #f92672;
+    --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+    --md-code-hl-comment-color:          #88846f;
+    --md-code-hl-generic-color:          #66d9ef;
+    --md-code-hl-variable-color:         #f8f8f2;
+}
+.md-typeset h1 {
+    color: #fff;
+}
+.md-typeset h1 b {
+    color:#fd4558;
+}
+.md-typeset h3 {
+    margin: 1.6em 0 .5em
+}
+.md-typeset h4 {
+    margin: 0.5em 0;
+}
+.md-typeset h5 {
+    margin: 0.5em 0;
+}
+.md-header, .md-tabs {
+    --md-primary-fg-color: #2b2b2b;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #2b2b2b;
+}
+.md-nav__link:focus, .md-nav__link:hover {
+    color: #fd4558;
+}
+.md-sidebar {
+    --md-typeset-a-color: #f06d7a;
+}
+
+.back {
+    width: 100vw;
+    height: min(440px, 460px);
+    left: 0;
+    top: 5vmax;
+    z-index: -1;
+    opacity: 0.2;
+    position:absolute;
+    background: no-repeat url("../assets/images/background.jpg");
+    background-size:cover;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.section-title {
+    color: #FDDA0D;
+}
+
+.rotate-img {
+    transform: rotate(90);
+}
