@@ -6,4 +6,4 @@ hide:
 ##  <b>Welcome to My Portfolio</b>
 # My name is <b>Dahye Kang</b>
 
-Build Career as Software Engineer
+Pursuing Career as a Software Engineer

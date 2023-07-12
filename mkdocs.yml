@@ -4,13 +4,15 @@ repo_url: https://github.com/kangdaia/
 nav:
     - Home: index.md
     - Projects:
-        - "What Makes You Happy?": project-happy.md
+        - "What Makes You Happy?": 
+            - projects/project-happy.md
 theme:
     name: material
     language: en
     features:
         - header.autohide
         - navigation.tabs
+        - content.code.copy
     font:
         code: Roboto Mono
     icon:
