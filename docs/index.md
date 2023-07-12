@@ -3,18 +3,21 @@ hide:
     - navigation
     - toc
 ---
-##  <b>Welcome</b> :fontawesome-regular-hand:
+
+### :high_brightness: **Nice to Meet You**
 # My name is <b>Dahye Kang</b>
 
-#### Software Engineer
+<br/>
+<br/>
+
+### Junior Software Engineer
 
 :fontawesome-brands-github: [@kangdaia](https://github.com/kangdaia) |
-:fontawesome-brands-linkedin-in: [kangdaia](https://www.linkedin.com/in/kangdaia/) |
+:fontawesome-brands-linkedin-in: [kangdaia](https://www.linkedin.com/in/kangdaia/) | :simple-notion: [Portfolio & Blog (kr)](https://kangdaia.notion.site/f853ebc801b543c989f43d2cef2ee096?pvs=4)
+
 :material-email: kangdiamond@gmail.com
 
-:simple-notion: [Portfolio & Blog (kr)](https://kangdaia.notion.site/f853ebc801b543c989f43d2cef2ee096?pvs=4)
-
----
+<br/>
 
 Creative problem-solver who seeks a career in Software Engineering position to hone skills in object-oriented programming using
 Python, C++, and Java, and building data structures, algorithms, and software design with the full-stack experience.
@@ -37,29 +40,34 @@ I am a collaborative person who enjoys sharing thoughts and new ideas, and I am 
 
 ---
 
-#### Technology Engineer Intern
+### Technology Engineer Intern
 
-##### Client Engineering Team, IBM Korea | *2023.07 ~ Present*
+#### IBM Client Engineering Team
+##### :octicons-location-16: Seoul, Korea | :octicons-calendar-16: *2023.07 ~ Present*
 
 - Working on Fast-API backend, Openshift, Kafka, Instana
 
 ---
 
-#### Data Engineering DevCourse (Bootcamp)
-##### Programmers.co.kr (Grepp) | *2023.04 ~ 2023.08*
+### Data Engineering DevCourse (Bootcamp)
+#### Programmers.co.kr (Grepp)
+##### :octicons-location-16: Seoul, Korea | :octicons-calendar-16: *2023.04 ~ 2023.08*
 
-- Learning constructing data infrastructure using AWS
+- studying to build data infrastructure and job-related skills such as Spark, Airflow, AWS cloud services, and Docker, which are skills required for a data engineer career.
+- proceed with two team projects based on learning: WORDSIGHT, Animal STAT-US Tracker
 
 ---
 
 ## :material-star-four-points: Education
 ---
-#### University of Maryland, College Park
+### University of Maryland, Bachelor of Science
 
-##### Bachelor of Science, Computer Science (minor Statistics) | *2018 ~ 2021*
+#### Computer Science Major, minor Statistics
+##### :octicons-location-16: College Park, MD | :octicons-calendar-16: *2018 ~ 2021*
 ---
-#### Green River College
+### Green River College, Associate of Science
 
-##### Associate of Science, Computer Science | Auburn, WA | *2015 ~ 2018*
+#### Computer Science Major
+##### :octicons-location-16: Auburn, WA | :octicons-calendar-16: *2015 ~ 2018*
 
 

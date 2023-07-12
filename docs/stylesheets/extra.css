@@ -29,14 +29,24 @@
     --md-code-hl-generic-color:          #66d9ef;
     --md-code-hl-variable-color:         #f8f8f2;
 }
-
 .md-typeset h1 {
     color: #fff;
 }
 .md-typeset h1 b {
     color:#fd4558;
 }
-
+.md-typeset h3 {
+    margin: 1.6em 0 .5em
+}
+.md-typeset h4 {
+    margin: 0.5em 0;
+}
+.md-typeset h5 {
+    margin: 0.5em 0;
+}
+.md-main {
+    z-index: 1;
+}
 .md-header, .md-tabs {
     --md-primary-fg-color: #2b2b2b;
 }
@@ -44,7 +54,6 @@
 [data-md-color-scheme="slate"] {
     --md-default-bg-color: #2b2b2b;
 }
-
 .md-nav__link:focus, .md-nav__link:hover {
     color: #fd4558;
 }
@@ -52,3 +61,19 @@
     --md-typeset-a-color: #f06d7a;
 }
 
+.back {
+    width: 100vw;
+    height: 420px;
+    left: 0;
+    top: 5%;
+    z-index: 0;
+    opacity: 0.2;
+    position:absolute;
+    background: no-repeat url("../assets/images/background.jpg");
+    background-size:cover;
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
+}

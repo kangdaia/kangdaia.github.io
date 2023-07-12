@@ -2,8 +2,9 @@ site_name: Diamond, Dahye
 repo_name: kangdaia/profile
 repo_url: https://github.com/kangdaia/
 nav:
-    - Home: index.md
-    - Projects:
+    - "Home": index.md
+    - "Projects":
+        - "Animal STAT-US Tracker": projects/project-animal.md
         - "What Makes You Happy?": projects/project-happy.md
 theme:
     name: material
@@ -16,13 +17,14 @@ theme:
         code: Roboto Mono
     icon:
         repo: fontawesome/brands/github
-        logo: fontawesome/solid/gem
+        logo: fontawesome/regular/gem
 
     palette:
         scheme: slate
         primary: custom
         accent: pink
 markdown_extensions:
+    - abbr
     - md_in_html
     - tables
     - attr_list
