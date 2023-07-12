@@ -12,6 +12,7 @@ theme:
     features:
         - header.autohide
         - navigation.tabs
+        - navigation.tabs.sticky
         - content.code.copy
     font:
         code: Roboto Mono
